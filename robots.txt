@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /includes
+Allow: /js
+Allow: /css
+Allow: /images
+Allow: /images/niceforms
+Disallow: /securimage
+Disallow: /includes/edit
+Disallow: /includes/states
+
+User-agent: Googlebot-Image
+Allow: /images
+Allow: /images/niceforms
+Disallow: /securimage

@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #bg, #bg table, #bg td {
+    height:100%;
+    width:100%;
+    overflow:hidden;
+	color:#fff;
+}
+
+h2 {
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 1px;
+	}
+	h2 small {
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 36px;
+		color: #333;
+		display: block;
+	}
+
+h3 {
+	font: 10px Calibri, Arial, Helvetica, sans-serif;
+	color:#fff;
+	margin-bottom: 0px;
+	clear: left;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #6f0303;
+	text-decoration:none;
+}
+
+td {
+	vertical-align:top;
+}
+
+#bg {
+    position: fixed;
+}
+
+#bg div {
+    height:100%;
+    left:-50%;
+    position:absolute;
+    top:-50%;
+    width:200%;
+}
+
+#bg td {
+    text-align:center;
+    vertical-align:middle;
+}
+
+#bg img {
+    margin:0 auto;
+    min-height:50%;
+    min-width:50%;
+}
+#cont {
+    position:absolute;
+    top:40px;right:140px;
+    z-index:70;
+    overflow:auto;
+}
+
+.boxVisible {
+    margin: 0 auto;
+    width: 500px;
+	height: 450px;
+    padding: 20px;
+    background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+    padding-bottom:100px;
+    font: 14px/2.2 Georgia, Serif;
+	border: 0px;
+	-webkit-border-radius: 20px;    /* for Safari */
+    -moz-border-radius: 20px;       /* for Firefox */
+	border-radius: 20px;
+}
+
+.boxHidden {
+	display: none;
+}
+
+#contmenu {
+    position:absolute;
+    top:40px;left:80px;
+    z-index:70;
+    overflow:auto;
+}
+.menu {
+    margin: 0 auto;
+    width: 400px;
+	height: 90px;
+    padding: 10px;
+    background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+    padding-bottom:100px;
+    font: 14px/2.2 Georgia, Serif;
+	border-radius: 20px;
+	border: 0px;
+	-webkit-border-radius: 20px;    /* for Safari */
+    -moz-border-radius: 20px;       /* for Firefox */
+}
+
+#contcopy {
+    position:absolute;
+    bottom:5px;left:5px;
+    z-index:70;
+    overflow:auto;
+}
+.copy {
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+}

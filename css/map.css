@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+
+v\:* {behavior:url(#default#VML);}
+html, body {
+	width: 100%; 
+	height: 100%;
+}
+
+body {
+	margin-top: 0px; 
+	margin-right: 0px; 
+	margin-left: 0px; 
+	margin-bottom: 0px; 
+	overflow: hidden;
+}
+
+a {
+	text-decoration:none;
+}
+
+a img {
+	text-decoration: none;
+	border: 0 none;
+}
+
+#overlay {
+	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+ 	background: url('../images/overlay.png') repeat;
+	visibility: hidden;
+	color: #FFF;
+	font: 16px bold Verdana,Tahoma,Arial,sans-serif;
+ 	text-align: left;
+	z-index: 998;
+}
+
+#errors {
+	position: absolute;
+ 	width: 300px;
+ 	height: 250px;
+	top: 50%;
+    left: 50%;
+    margin-left: -150px;
+	margin-top: -125px;
+ 	background-color: #000;
+	visibility: hidden;
+	vertical-align: middle;
+	color: #FFF;
+	font: 16px bold Verdana,Tahoma,Arial,sans-serif;
+	padding: 10px;
+ 	text-align: left;
+	z-index: 1002;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+}
+
+#addmarker {
+	position:absolute;
+ 	width: 180px;
+ 	height: 200px;
+	top: 50%;
+    left: 50%;
+    margin-left: -90px;
+	margin-top: -100px;
+ 	background-color: #FFF;
+	visibility:hidden;
+	color: #000;
+	font:16px bold Verdana,Tahoma,Arial,sans-serif;
+	padding:10px;
+ 	text-align: left;
+	z-index:999;
+	border: 1px #000 solid;
+	border-radius:10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+}
+#addmarker ul {
+	list-style:none;
+	font:12pt "Arial Black", Gadget, sans-serif;
+	margin:0 0 0 -30px;
+}
+
+#addmarker li {
+	margin:0 0 10px 0;
+}
+
+#addmarker a {
+	color:#000;
+	text-decoration:none;
+}
+
+#addmarker a:hover {
+	color:#6f0303;
+}
+
+#addmarker img {
+	border:0px;
+}
+
+#onoffmarker {
+	position:absolute;
+ 	width: 220px;
+ 	height: 200px;
+	top: 50%;
+    left: 50%;
+    margin-left: -110px;
+	margin-top: -100px;
+ 	background-color: #FFF;
+	visibility:hidden;
+	color: #000;
+	font:16px bold Verdana,Tahoma,Arial,sans-serif;
+	padding:10px;
+ 	text-align: left;
+	z-index:999;
+	border: 1px #000 solid;
+	border-radius:10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+}
+#onoffmarker ul {
+	list-style:none;
+	font:12pt "Arial Black", Gadget, sans-serif;
+	margin:0 0 0 -30px;
+}
+
+#onoffmarker li {
+	margin:0 0 10px 0;
+}
+
+#onoffmarker a {
+	color:#000;
+	text-decoration:none;
+}
+
+#onoffmarker a:hover {
+	color:#6f0303;
+}
+
+#onoffmarker img {
+	border:0px;
+}
+
+#top_error {
+	position: absolute;
+ 	width: 600px;
+ 	height: 40px;
+	top: 20px;
+    left: 50%;
+	margin-left: -300px;
+ 	background-color: #FFF;
+	visibility: hidden;
+	color: #6f0303;
+	text-align: center;
+	font: 16px Verdana,Tahoma,Arial,sans-serif;
+	font-weight: bold;
+	padding: 10px;
+	z-index: 1003;
+	border: 1px #000 solid;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+}
+
+#markerContainer {
+	position: absolute;
+ 	width: 600px;
+ 	height: 500px;
+	top: 50%;
+    left: 50%;
+    margin-left: -300px;
+	margin-top: -250px;
+ 	background-color: #FFF;
+	visibility: hidden;
+	color: #000;
+	font: 16px bold Verdana,Tahoma,Arial,sans-serif;
+	padding: 10px;
+ 	text-align: left;
+	z-index: 1000;
+	overflow: auto;
+	border: 1px #000 solid;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+}
+
+#markerContent {
+	margin: 30px 0 0 0;
+}
+
+.popup_close {
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	right: 0px;
+	top: 0px;
+	border:0;
+}
+
+#progress {
+	background-color: rgba(0,0,0,.7);
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	height: 80px;
+	width: 200px;
+	top: 50%;
+	left: 50%;
+	visibility:hidden;
+	margin-top: -40px;
+	margin-left: -100px;
+	line-height: 80px;
+	position: absolute;
+	text-align: center;
+	z-index:2000;
+	border-radius:10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+}
+
+#bottom {
+	width: 50%;
+	height: 44px;
+	margin:0 0 0 10px;
+	padding-top: 4px;
+	position: fixed;
+	bottom: 10px;
+	border-radius:10px;
+	-webkit-border-radius: 10px;    /* for Safari */
+    -moz-border-radius: 10px;       /* for Firefox */	
+	color: #ffffff;
+	background:url('../images/navbar_bg.png') repeat;
+}
+
+#navbar {
+	margin: 0;
+	padding: 0;
+	height: 1em; 
+}
+
+#navbar li {
+	list-style: none;
+	float: right; 
+}
+
+#navbar li a {
+	display: block;
+	padding-right: 5px;
+	background-color: #6f0303;
+	color: #fff;
+	text-decoration: none; 
+}
+
+#navbar li ul {
+	display: none;
+	text-align:left;
+	bottom: 2.8em;
+	width: 10em; /* Width to help Opera out */
+	background-color: #6f0303;
+}
+
+#navbar li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; 
+}
+
+#navbar li:hover li {
+	float: none; 
+}
+
+#navbar li:hover li a {
+	background-color: #6f0303;
+	border-bottom: 1px solid #fff;
+	color: #fff; 
+}
+
+#navbar li li a:hover {
+	background-color: #6f0303; 
+}
